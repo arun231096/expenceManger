@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.sasurie.student.management.model.Student;
 
-public interface ToDoListService {
+public interface StudentService {
 
 	public List<Student> listToDo();
 }

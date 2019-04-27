@@ -10,7 +10,7 @@ import com.sasurie.student.management.dao.StudentDao;
 import com.sasurie.student.management.model.Student;
 
 @Service
-public class ToDoListServiceImpl implements ToDoListService {
+public class StudentServiceImpl implements StudentService {
 	
 	@Autowired
 	private StudentDao ToDoDAO;

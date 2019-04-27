@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.sasurie.student.management.model.Student;
-import com.sasurie.student.management.service.ToDoListService;
+import com.sasurie.student.management.service.StudentService;
 
 @RestController
 public class DemoController {
 
 	@Autowired
-	private ToDoListService service;
+	private StudentService service;
 	
 	@GetMapping(value="/")
 	public ResponseEntity<List<Student>> getList() {
