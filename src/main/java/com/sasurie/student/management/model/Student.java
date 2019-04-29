@@ -20,7 +20,7 @@ import lombok.Data;
  *
  */
 @Entity
-@Table(name="todolist")
+@Table(name="student")
 @JsonAutoDetect
 @Data
 public class Student {
