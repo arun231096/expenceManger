@@ -22,4 +22,10 @@ public class CollegeServiceImpl implements CollegeService {
 		return this.collegedao.findAll();
 	}
 
+	@Override
+	public College save(College clg) {
+
+		return this.collegedao.save(clg);
+	}
+
 }

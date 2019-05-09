@@ -7,4 +7,5 @@ import com.sasurie.student.management.model.College;
 public interface CollegeService {
 
 	public List<College> findAll();
+	public College save(College clg);
 }

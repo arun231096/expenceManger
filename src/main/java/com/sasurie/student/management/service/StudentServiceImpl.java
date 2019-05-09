@@ -21,4 +21,10 @@ public class StudentServiceImpl implements StudentService {
 		return this.ToDoDAO.findAll();
 	}
 
+	@Override
+	public Student save(Student stud) {
+		// TODO Auto-generated method stub
+		return this.ToDoDAO.save(stud);
+	}
+
 }
