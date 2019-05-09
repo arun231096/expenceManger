@@ -22,6 +22,7 @@ public class StudentServiceImpl implements StudentService {
 	}
 
 	@Override
+	@Transactional
 	public Student save(Student stud) {
 		// TODO Auto-generated method stub
 		return this.ToDoDAO.save(stud);

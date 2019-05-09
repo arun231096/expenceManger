@@ -23,6 +23,7 @@ public class CollegeServiceImpl implements CollegeService {
 	}
 
 	@Override
+	@Transactional
 	public College save(College clg) {
 
 		return this.collegedao.save(clg);
