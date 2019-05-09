@@ -8,17 +8,17 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import com.sasurie.student.management.model.Student;
-import com.sasurie.student.management.service.StudentService;
+import com.sasurie.student.management.model.College;
+import com.sasurie.student.management.service.CollegeService;
 
 @Controller
-public class DemoController {
+public class CollegeController {
 
 	@Autowired
-	private StudentService service;
+	private CollegeService service;
 	
-	@GetMapping(value="/")
-	public ResponseEntity<List<Student>> getList() {
-		return new ResponseEntity<List<Student>>(this.service.listToDo(), HttpStatus.OK);
+	@GetMapping(value="/clg")
+	public ResponseEntity<List<College>> getList() {
+		return new ResponseEntity<List<College>>(this.service.findAll(), HttpStatus.OK);
 	}
 }
