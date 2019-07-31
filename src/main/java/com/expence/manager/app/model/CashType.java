@@ -10,7 +10,7 @@ import javax.persistence.Table;
 import lombok.Data;
 
 @Entity
-@Table(name="college")
+@Table(name="cashtype")
 @Data
 public class CashType {
 
