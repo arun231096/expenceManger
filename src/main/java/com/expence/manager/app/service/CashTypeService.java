@@ -1,8 +1,8 @@
-package com.sasurie.student.management.service;
+package com.expence.manager.app.service;
 
 import java.util.List;
 
-import com.sasurie.student.management.model.CashType;
+import com.expence.manager.app.model.CashType;
 
 public interface CashTypeService {
 

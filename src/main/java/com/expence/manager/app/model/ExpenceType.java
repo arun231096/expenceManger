@@ -1,4 +1,4 @@
-package com.sasurie.student.management.model;
+package com.expence.manager.app.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

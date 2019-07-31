@@ -1,8 +1,8 @@
-package com.sasurie.student.management.repo;
+package com.expence.manager.app.repo;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.sasurie.student.management.model.CashType;
+import com.expence.manager.app.model.CashType;
 
 public interface CashTypeRepo extends JpaRepository<CashType, Long> {
 

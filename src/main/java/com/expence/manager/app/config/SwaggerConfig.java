@@ -1,4 +1,4 @@
-package com.sasurie.student.management.config;
+package com.expence.manager.app.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

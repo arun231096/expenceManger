@@ -1,4 +1,4 @@
-package com.sasurie.student.management.controller;
+package com.expence.manager.app.controller;
 
 import java.util.List;
 
@@ -9,8 +9,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.sasurie.student.management.model.CashType;
-import com.sasurie.student.management.service.CashTypeService;
+import com.expence.manager.app.model.CashType;
+import com.expence.manager.app.service.CashTypeService;
 
 @Controller
 public class CashTypeController {

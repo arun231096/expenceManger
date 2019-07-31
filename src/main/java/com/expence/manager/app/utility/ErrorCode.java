@@ -1,4 +1,4 @@
-package com.sasurie.student.management.utility;
+package com.expence.manager.app.utility;
 
 public enum ErrorCode {
 

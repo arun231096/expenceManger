@@ -1,4 +1,4 @@
-package com.sasurie.student.management.service;
+package com.expence.manager.app.service;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.sasurie.student.management.model.ExpenceType;
-import com.sasurie.student.management.repo.ExpenceTypeRepo;
+import com.expence.manager.app.model.ExpenceType;
+import com.expence.manager.app.repo.ExpenceTypeRepo;
 
 @Service
 public class ExpenceTypeServiceImpl implements ExpenceTypeService {

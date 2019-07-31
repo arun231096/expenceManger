@@ -1,4 +1,4 @@
-package com.sasurie.student.management;
+package com.expence.manager.app;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

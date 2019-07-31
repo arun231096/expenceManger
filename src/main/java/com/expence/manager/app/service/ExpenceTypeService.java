@@ -1,8 +1,8 @@
-package com.sasurie.student.management.service;
+package com.expence.manager.app.service;
 
 import java.util.List;
 
-import com.sasurie.student.management.model.ExpenceType;
+import com.expence.manager.app.model.ExpenceType;
 
 public interface ExpenceTypeService {
 

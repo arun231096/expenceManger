@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.sasurie.student.management</groupId>
-	<artifactId>StudentManagement</artifactId>
+	<artifactId>ExpenceManagement</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>StudentManagement</name>
+	<name>ExpenceManagement</name>
 	<description>This solution takes Student Management system digitally with high qualified Technology</description>
 
 	<properties>

@@ -1,4 +1,4 @@
-package com.sasurie.student.management.controller;
+package com.expence.manager.app.controller;
 
 import java.util.List;
 
@@ -9,8 +9,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import com.sasurie.student.management.utility.AppException;
-import com.sasurie.student.management.utility.ErrorCode;
+import com.expence.manager.app.utility.AppException;
+import com.expence.manager.app.utility.ErrorCode;
 
 @ControllerAdvice
 public class GlobalExceptionHandlerController {
