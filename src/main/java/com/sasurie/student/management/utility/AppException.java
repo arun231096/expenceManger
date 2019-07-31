@@ -1,4 +1,4 @@
-package com.sasurie.student.management.exceptionhandler;
+package com.sasurie.student.management.utility;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -6,27 +6,27 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.sasurie.student.management.dao.CollegeDao;
-import com.sasurie.student.management.model.College;
+import com.sasurie.student.management.model.CashType;
+import com.sasurie.student.management.repo.CashTypeRepo;
 
 @Service
-public class CollegeServiceImpl implements CollegeService {
+public class CashTypeServiceImpl implements CashTypeService {
 
 	@Autowired
-	CollegeDao collegedao;
+	CashTypeRepo collegedao;
 
 	@Override
 	@Transactional
-	public List<College> findAll() {
+	public List<CashType> findAll() {
 
 		return this.collegedao.findAll();
 	}
 
 	@Override
 	@Transactional
-	public College save(College clg) {
+	public CashType save(CashType type) {
 
-		return this.collegedao.save(clg);
+		return this.collegedao.save(type);
 	}
 
 }

@@ -9,14 +9,20 @@ import javax.persistence.Table;
 
 import lombok.Data;
 
+/**
+ * Entity bean with JPA annotations
+ * Hibernate provides JPA implementation
+ * @author arunkumar
+ *
+ */
 @Entity
-@Table(name="college")
+@Table(name="student")
 @Data
-public class College {
+public class ExpenceType {
 
-	@Id
+	@Id	
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	long id;
+	private long id;
 
 	@Column(name="name")
 	private String name;

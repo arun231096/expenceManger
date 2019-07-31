@@ -9,8 +9,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import com.sasurie.student.management.exceptionhandler.AppException;
-import com.sasurie.student.management.exceptionhandler.ErrorCode;
+import com.sasurie.student.management.utility.AppException;
+import com.sasurie.student.management.utility.ErrorCode;
 
 @ControllerAdvice
 public class GlobalExceptionHandlerController {

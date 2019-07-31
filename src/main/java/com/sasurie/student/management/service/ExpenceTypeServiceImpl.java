@@ -6,26 +6,26 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.sasurie.student.management.dao.StudentDao;
-import com.sasurie.student.management.model.Student;
+import com.sasurie.student.management.model.ExpenceType;
+import com.sasurie.student.management.repo.ExpenceTypeRepo;
 
 @Service
-public class StudentServiceImpl implements StudentService {
+public class ExpenceTypeServiceImpl implements ExpenceTypeService {
 	
 	@Autowired
-	private StudentDao ToDoDAO;
+	private ExpenceTypeRepo ToDoDAO;
 
 	@Override
 	@Transactional
-	public List<Student> listToDo() {
+	public List<ExpenceType> listToDo() {
 		return this.ToDoDAO.findAll();
 	}
 
 	@Override
 	@Transactional
-	public Student save(Student stud) {
+	public ExpenceType save(ExpenceType type) {
 		// TODO Auto-generated method stub
-		return this.ToDoDAO.save(stud);
+		return this.ToDoDAO.save(type);
 	}
 
 }

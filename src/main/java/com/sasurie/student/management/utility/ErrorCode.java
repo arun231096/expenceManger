@@ -1,4 +1,4 @@
-package com.sasurie.student.management.exceptionhandler;
+package com.sasurie.student.management.utility;
 
 public enum ErrorCode {
 
