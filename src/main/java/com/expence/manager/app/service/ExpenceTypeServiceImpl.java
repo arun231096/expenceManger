@@ -1,6 +1,7 @@
 package com.expence.manager.app.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,19 +14,33 @@ import com.expence.manager.app.repo.ExpenceTypeRepo;
 public class ExpenceTypeServiceImpl implements ExpenceTypeService {
 	
 	@Autowired
-	private ExpenceTypeRepo ToDoDAO;
+	private ExpenceTypeRepo repo;
 
 	@Override
 	@Transactional
 	public List<ExpenceType> listToDo() {
-		return this.ToDoDAO.findAll();
+		return this.repo.findAll();
 	}
 
 	@Override
 	@Transactional
 	public ExpenceType save(ExpenceType type) {
-		// TODO Auto-generated method stub
-		return this.ToDoDAO.save(type);
+		return this.repo.save(type);
+	}
+
+	@Override
+	public ExpenceType update(ExpenceType type) {
+		return this.repo.save(type);
+	}
+
+	@Override
+	public Optional<ExpenceType> read(long id) {
+		return this.repo.findById(id);
+	}
+
+	@Override
+	public void delete(long id) {
+		this.repo.deleteById(id);
 	}
 
 }
