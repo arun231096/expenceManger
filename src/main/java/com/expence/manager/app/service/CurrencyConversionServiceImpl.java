@@ -4,10 +4,12 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.expence.manager.app.model.CurrencyConversion;
 import com.expence.manager.app.repo.CurrencyConversionRepo;
 
+@Service
 public class CurrencyConversionServiceImpl implements CurrencyConversionService {
 
 	@Autowired

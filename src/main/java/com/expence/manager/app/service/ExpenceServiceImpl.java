@@ -4,10 +4,12 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.expence.manager.app.model.Expense;
 import com.expence.manager.app.repo.ExpenseRepo;
 
+@Service
 public class ExpenceServiceImpl implements ExpenseService {
 
 	@Autowired
