@@ -14,33 +14,33 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 
-import com.expence.manager.app.model.ExpenceType;
-import com.expence.manager.app.service.ExpenceTypeService;
+import com.expence.manager.app.model.ExpenseType;
+import com.expence.manager.app.service.ExpenseTypeService;
 
 @Controller
 public class ExpenceTypeController {
 
 	@Autowired
-	private ExpenceTypeService service;
+	private ExpenseTypeService service;
 	
 	@GetMapping(value="/expencetype")
-	public ResponseEntity<List<ExpenceType>> getList() {
-		return new ResponseEntity<List<ExpenceType>>(this.service.listToDo(), HttpStatus.OK);
+	public ResponseEntity<List<ExpenseType>> getList() {
+		return new ResponseEntity<List<ExpenseType>>(this.service.listToDo(), HttpStatus.OK);
 	}
 	
 	@PostMapping(value="/expencetype/save")
-	public ResponseEntity<ExpenceType> saveExpenceType(ExpenceType stud) {
-		return new ResponseEntity<ExpenceType>(this.service.save(stud), HttpStatus.OK);
+	public ResponseEntity<ExpenseType> saveExpenceType(ExpenseType stud) {
+		return new ResponseEntity<ExpenseType>(this.service.save(stud), HttpStatus.OK);
 	}
 	
 	@PutMapping(value = "/expencetype/update")
-	public ResponseEntity<ExpenceType> updateExpenceType (ExpenceType type) {
-		return new ResponseEntity<ExpenceType>(this.service.update(type), HttpStatus.OK);
+	public ResponseEntity<ExpenseType> updateExpenceType (ExpenseType type) {
+		return new ResponseEntity<ExpenseType>(this.service.update(type), HttpStatus.OK);
 	}
 
 	@GetMapping(value = "/expencetype/read")
-	public ResponseEntity<Optional<ExpenceType>> readExpenceType (@PathParam(value = "id") long id) {
-		return new ResponseEntity<Optional<ExpenceType>>(this.service.read(id), HttpStatus.OK);
+	public ResponseEntity<Optional<ExpenseType>> readExpenceType (@PathParam(value = "id") long id) {
+		return new ResponseEntity<Optional<ExpenseType>>(this.service.read(id), HttpStatus.OK);
 	}
 
 	@DeleteMapping(value = "/expencetype/delete")

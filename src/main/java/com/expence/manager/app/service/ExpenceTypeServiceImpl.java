@@ -7,34 +7,34 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.expence.manager.app.model.ExpenceType;
+import com.expence.manager.app.model.ExpenseType;
 import com.expence.manager.app.repo.ExpenceTypeRepo;
 
 @Service
-public class ExpenceTypeServiceImpl implements ExpenceTypeService {
+public class ExpenceTypeServiceImpl implements ExpenseTypeService {
 	
 	@Autowired
 	private ExpenceTypeRepo repo;
 
 	@Override
 	@Transactional
-	public List<ExpenceType> listToDo() {
+	public List<ExpenseType> listToDo() {
 		return this.repo.findAll();
 	}
 
 	@Override
 	@Transactional
-	public ExpenceType save(ExpenceType type) {
+	public ExpenseType save(ExpenseType type) {
 		return this.repo.save(type);
 	}
 
 	@Override
-	public ExpenceType update(ExpenceType type) {
+	public ExpenseType update(ExpenseType type) {
 		return this.repo.save(type);
 	}
 
 	@Override
-	public Optional<ExpenceType> read(long id) {
+	public Optional<ExpenseType> read(long id) {
 		return this.repo.findById(id);
 	}
 

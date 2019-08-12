@@ -18,7 +18,7 @@ import lombok.Data;
 @Entity
 @Table(name="extencetype")
 @Data
-public class ExpenceType {
+public class ExpenseType {
 
 	@Id	
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
