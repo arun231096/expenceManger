@@ -43,4 +43,7 @@ public class Expense {
 	
 	@Column
 	private String expense_image;
+	
+	@Column
+	private boolean expense_status;
 }

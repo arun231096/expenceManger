@@ -34,4 +34,7 @@ public class Advance {
 	
 	@Column
 	private LocalDateTime advance_date;
+	
+	@Column
+	private boolean advance_status;
 }

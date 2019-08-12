@@ -43,4 +43,7 @@ public class CurrencyConversion {
 	
 	@Column
 	private String currency_conversion_image;
+	
+	@Column
+	private boolean currency_conversion_status;
 }
