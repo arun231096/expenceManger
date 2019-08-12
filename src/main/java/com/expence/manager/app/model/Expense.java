@@ -1,6 +1,6 @@
 package com.expence.manager.app.model;
 
-import java.sql.Date;
+import java.time.LocalDateTime;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -18,26 +18,29 @@ public class Expense {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	long expense_id;
+	private long expense_id;
 	
 	@Column
-	Date expence_date;
+	private String user_id;
 	
 	@Column
-	long expense_cash;
+	private LocalDateTime expence_date;
 	
 	@Column
-	String expense_currency_type;
+	private long expense_cash;
 	
 	@Column
-	String expense_note;
+	private String expense_currency_type;
 	
 	@Column
-	String expense_type;
+	private String expense_note;
 	
 	@Column
-	String expense_payment_mode;
+	private String expense_type;
 	
 	@Column
-	String expense_image;
+	private String expense_payment_mode;
+	
+	@Column
+	private String expense_image;
 }

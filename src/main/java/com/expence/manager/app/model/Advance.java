@@ -18,20 +18,20 @@ public class Advance {
 	
 	@Id	
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private long id;
+	private long advance_id;
 	
 	@Column
-	private long user_id;
+	private String user_id;
 	
 	@Column
-	private long amount;
+	private long advance_amount;
 	
 	@Column
-	private String currency;
+	private String advance_currency_type;
 	
 	@Column
-	private String note;
+	private String advance_note;
 	
 	@Column
-	private LocalDateTime date;
+	private LocalDateTime advance_date;
 }

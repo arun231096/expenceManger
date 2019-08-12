@@ -16,8 +16,8 @@ public class CashType {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	long id;
+	long cash_type_id;
 
 	@Column(name="name")
-	private String name;
+	private String cash_type_name;
 }
