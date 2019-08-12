@@ -24,9 +24,9 @@ public class ExpenseType {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long expense_type_id;
 
-	@Column
+	@Column(name = "expense_type_icon")
 	private String expense_type_icon;
 	
-	@Column(name="name")
+	@Column(name="expense_type_name")
 	private String expense_type_name;
 }

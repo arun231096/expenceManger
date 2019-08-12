@@ -20,30 +20,30 @@ public class Expense {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long expense_id;
 	
-	@Column
+	@Column(name = "user_id")
 	private String user_id;
 	
-	@Column
+	@Column(name = "expence_date")
 	private LocalDateTime expence_date;
 	
-	@Column
+	@Column(name = "expense_cash")
 	private long expense_cash;
 	
-	@Column
+	@Column(name = "expense_currency_type")
 	private String expense_currency_type;
 	
-	@Column
+	@Column(name = "expense_note")
 	private String expense_note;
 	
-	@Column
+	@Column(name = "expense_type")
 	private String expense_type;
 	
-	@Column
+	@Column(name = "expense_payment_mode")
 	private String expense_payment_mode;
 	
-	@Column
+	@Column(name = "expense_image")
 	private String expense_image;
 	
-	@Column
+	@Column(name = "expense_status")
 	private boolean expense_status;
 }

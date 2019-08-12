@@ -20,21 +20,21 @@ public class Advance {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long advance_id;
 	
-	@Column
+	@Column(name = "user_id")
 	private String user_id;
 	
-	@Column
+	@Column(name = "advance_amount")
 	private long advance_amount;
 	
-	@Column
+	@Column(name = "advance_currency_type")
 	private String advance_currency_type;
 	
-	@Column
+	@Column(name = "advance_note")
 	private String advance_note;
 	
-	@Column
+	@Column(name = "advance_date")
 	private LocalDateTime advance_date;
 	
-	@Column
+	@Column(name = "advance_status")
 	private boolean advance_status;
 }

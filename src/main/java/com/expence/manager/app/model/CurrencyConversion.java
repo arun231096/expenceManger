@@ -20,30 +20,30 @@ public class CurrencyConversion {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long currency_conversion_id;
 	
-	@Column
+	@Column(name="currency_conversion_date")
 	private LocalDateTime currency_conversion_date;
 	
-	@Column
+	@Column(name="currency_conversion_amount")
 	private String currency_conversion_amount;
 	
-	@Column
+	@Column(name="currency_conversion_base_currency_type")
 	private String currency_conversion_base_currency_type;
 	
-	@Column
+	@Column(name="currency_conversion_converted_currency_type")
 	private String currency_conversion_converted_currency_type;
 	
-	@Column
+	@Column(name="currency_conversion_currency_rate")
 	private String currency_conversion_currency_rate;
 	
-	@Column
+	@Column(name="currency_conversion_converted_amount")
 	private String currency_conversion_converted_amount;
 	
-	@Column
+	@Column(name="currency_conversion_note")
 	private String currency_conversion_note;
 	
-	@Column
+	@Column(name="currency_conversion_image")
 	private String currency_conversion_image;
 	
-	@Column
+	@Column(name="currency_conversion_status")
 	private boolean currency_conversion_status;
 }
