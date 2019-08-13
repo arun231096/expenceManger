@@ -29,16 +29,19 @@ public class ExpenceTypeServiceImpl implements ExpenseTypeService {
 	}
 
 	@Override
+	@Transactional
 	public ExpenseType update(ExpenseType type) {
 		return this.repo.save(type);
 	}
 
 	@Override
+	@Transactional
 	public Optional<ExpenseType> read(long id) {
 		return this.repo.findById(id);
 	}
 
 	@Override
+	@Transactional
 	public void delete(long id) {
 		this.repo.deleteById(id);
 	}

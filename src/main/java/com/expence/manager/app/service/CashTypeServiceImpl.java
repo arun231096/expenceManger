@@ -31,16 +31,19 @@ public class CashTypeServiceImpl implements CashTypeService {
 	}
 
 	@Override
+	@Transactional
 	public CashType update(CashType type) {
 		return this.repo.save(type);
 	}
 
 	@Override
+	@Transactional
 	public Optional<CashType> read(long id) {
 		return this.repo.findById(id);
 	}
 
 	@Override
+	@Transactional
 	public void delete(long id) {
 		this.repo.deleteById(id);
 	}
