@@ -7,12 +7,14 @@ import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import com.expence.manager.app.utility.AppException;
 import com.expence.manager.app.utility.ErrorCode;
 
 @ControllerAdvice
+@CrossOrigin
 public class GlobalExceptionHandlerController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(GlobalExceptionHandlerController.class);
