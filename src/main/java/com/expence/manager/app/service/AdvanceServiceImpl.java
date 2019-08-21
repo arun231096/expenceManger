@@ -47,4 +47,10 @@ public class AdvanceServiceImpl implements AdvanceService {
 		this.repo.deleteById(id);
 	}
 
+	@Override
+	@Transactional
+	public List<Advance> findAllById(List<Long> id) {
+		return this.repo.findAllById(id);
+	}
+
 }

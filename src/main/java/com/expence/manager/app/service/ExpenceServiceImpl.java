@@ -46,4 +46,10 @@ public class ExpenceServiceImpl implements ExpenseService {
 		this.repo.deleteById(id);
 	}
 
+	@Override
+	@Transactional
+	public List<Expense> findAllById(List<Long> ids) {
+		return this.repo.findAllById(ids);
+	}
+
 }

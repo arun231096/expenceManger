@@ -46,4 +46,10 @@ public class CurrencyConversionServiceImpl implements CurrencyConversionService 
 		this.repo.deleteById(id);
 	}
 
+	@Override
+	@Transactional
+	public List<CurrencyConversion> findAllById(List<Long> id) {
+		return this.repo.findAllById(id);
+	}
+
 }

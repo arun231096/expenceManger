@@ -8,6 +8,7 @@ import com.expence.manager.app.model.CurrencyConversion;
 public interface CurrencyConversionService {
 
 	public List<CurrencyConversion> findAll();
+	public List<CurrencyConversion> findAllById(List<Long> id);
 	public CurrencyConversion save(CurrencyConversion type);
 	public CurrencyConversion update(CurrencyConversion type);
 	public Optional<CurrencyConversion> read(long id);
