@@ -8,13 +8,13 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.expence.manager.app.model.ExpenseType;
-import com.expence.manager.app.repo.ExpenceTypeRepo;
+import com.expence.manager.app.repo.ExpenseTypeRepo;
 
 @Service
 public class ExpenceTypeServiceImpl implements ExpenseTypeService {
 	
 	@Autowired
-	private ExpenceTypeRepo repo;
+	private ExpenseTypeRepo repo;
 
 	@Override
 	@Transactional
