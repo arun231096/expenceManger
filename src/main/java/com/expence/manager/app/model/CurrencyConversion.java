@@ -20,6 +20,9 @@ public class CurrencyConversion {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long currency_conversion_id;
 	
+	@Column(name = "currency_conversion_user")
+	private String currency_conversion_user_id;
+
 	@Column(name="currency_conversion_date")
 	private LocalDateTime currency_conversion_date;
 	
